@@ -1,0 +1,20 @@
+Prioridades de implementação para o Jogo:
+
+ -> Definir a Resolução Padrão; qual dispositivo;
+ -> Implementar a funcionalidade Sprite no Ponei;  *SPRITE NO CENÁRIO ????
+ -> Implementar o salto do Ponei (jumpping);
+ -> Decidir os objetos (obstáculos) que o ponei deverá saltar (cerca, tronco, etc...)
+ -> Implementar o efeito (sprite) para os obstáculos;
+ -> Implementar as colisões do Ponei nos obstáculos;
+ -> Melhorar o backgrond (efeito perspectiva) decidindo o que será movimentado no cenário.
+
+
+Demais Funcionalidades:
+
+ -> Implementar o Menu com escolha dos Poneis;
+ -> Implementar o cadastro dos jogadores com o armazenamento dos últimos 5 resultados;
+ -> Implemetar a pntuação do jogo;
+ -> Melhorar a parte Gráfica;
+ 
+
+ 
