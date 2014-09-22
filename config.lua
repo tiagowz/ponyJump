@@ -1,9 +1,20 @@
+application =
+{
+    content = 
+    {
+        width = 320,
+        height = 480,
+        scale = "zoomEven"
+    },
+}
+
+--Arquivo Original
 --application = {
-	--content = {
-		--width = 2048,
-		--height = 1536, 
-		--scale = "zoomEven",
-		--fps = 30,
+	---content = {
+	--width = 2048,
+	--height = 1536, 
+	--scale = "zoomEven",
+	--fps = 30,
 		
 		--[[
         imageSuffix = {
