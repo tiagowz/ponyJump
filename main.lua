@@ -22,6 +22,10 @@ physics.start()
 local backgroundCeu = display.newImage("Imagens/backgroundCeu.png",width,height)
 local backgroundGrama = display.newImage( "Imagens/backgroundGrama.png", width, 260)
 local backgroundChao = display.newImage("Imagens/backgroundChao.png", width, 315)
+local arvore = display.newImage( "Imagens/arvoreP.png", 480, 180)
+
+
+--arvore:translate( width , height )
 
 
 --Sprite do Ponei
@@ -44,6 +48,23 @@ local function onScreenTouch( event )
 				end
 	end
 
+local tPrevious = system.getTimer()
+
+local function mover( event )
+
+	local tDelta = event.time - tPrevious
+	tPrevious = event.time
+
+	local xOffset = ( 0.1 * tDelta )
+	arvore.x = arvore.x - xOffset
+
+	if (arvore.x + arvore.contentWidth) < 0 then
+		arvore:translate( 480 * 2, 0)
+	end
+	-- body
+end
+
 
 --acionamento do evento "touch"
 Runtime:addEventListener("touch", onScreenTouch)
+Runtime:addEventListener( "enterFrame", mover );
